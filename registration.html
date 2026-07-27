@@ -1,0 +1,98 @@
+c<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: blue;
+            text-align: center;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            text-align: right;
+            margin-left: 5px;
+            margin-right: 2px;
+        }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      input[type="number"],
+      select,
+      textarea{
+          width:200px;
+}  
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Registration Page</h1>
+
+    <form action="Registration" method="GET">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male" style="width:auto;">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female" style="width:auto;">Female</label>
+
+        <input type="radio" id="others" name="gender" value="Others">
+        <label for="others" style="width:auto;">Others</label>
+        <br><br>
+
+        <label for="phone">Phone No</label>
+        <input type="number" id="phone" name="phno">
+        <br><br>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="addr" rows="4"></textarea>
+        <br><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms" style="width:auto;">Accept Terms and Conditions</label>
+        <br><br>
+
+        <label for="branch">Branch</label>
+        <select id="branch" name="ops">
+            <option value="CSE-A">CSE-A</option>
+            <option value="CSE-B">CSE-B</option>
+            <option value="CSE-C">CSE-C</option>
+            <option value="CSM">CSM</option>
+            <option value="EEE">EEE</option>
+            <option value="ECE">ECE</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
